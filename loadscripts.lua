@@ -12,4 +12,6 @@ Join Discord At: discord.gg/jNm8rNTC2r
 
 if game.GameId == 2203488982 then -- Rage Runner
   loadstring(game:HttpGet('https://raw.githubusercontent.com/LOLEduard/Eduard-s-Hub-Personal-Scripts/main/RageRunner.lua'))()
+elseif game.GameId == 3940690950 then -- Merge Simulator
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/LOLEduard/Eduard-s-Hub-Personal-Scripts/main/MergeSimulator.lua'))()
 end
