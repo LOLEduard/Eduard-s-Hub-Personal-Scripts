@@ -14,4 +14,6 @@ if game.GameId == 2203488982 then -- Rage Runner
   loadstring(game:HttpGet('https://raw.githubusercontent.com/LOLEduard/Eduard-s-Hub-Personal-Scripts/main/RageRunner.lua'))()
 elseif game.GameId == 3940690950 then -- Merge Simulator
   loadstring(game:HttpGet('https://raw.githubusercontent.com/LOLEduard/Eduard-s-Hub-Personal-Scripts/main/MergeSimulator.lua'))()
+elseif game.GameId == 210851291 then -- Build A Boat For Treasure
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/LOLEduard/Eduard-s-Hub-Personal-Scripts/main/BuildABoatForTreasure.lua'))()
 end
