@@ -10,10 +10,18 @@ Brought To You By EduardLOL(eduardlol)
 Join Discord At: discord.gg/jNm8rNTC2r
 ]]--
 
-if game.GameId == 2203488982 then -- Rage Runner
-  loadstring(game:HttpGet('https://raw.githubusercontent.com/LOLEduard/Eduard-s-Hub-Personal-Scripts/main/RageRunner.lua'))()
-elseif game.GameId == 3940690950 then -- Merge Simulator
-  loadstring(game:HttpGet('https://raw.githubusercontent.com/LOLEduard/Eduard-s-Hub-Personal-Scripts/main/MergeSimulator.lua'))()
-elseif game.GameId == 210851291 then -- Build A Boat For Treasure
-  loadstring(game:HttpGet('https://raw.githubusercontent.com/LOLEduard/Eduard-s-Hub-Personal-Scripts/main/BuildABoatForTreasure.lua'))()
+local Games = {
+    [2203488982] = 'https://raw.githubusercontent.com/LOLEduard/Eduard-s-Hub-Personal-Scripts/main/RageRunner.lua',
+    [3940690950] = 'https://raw.githubusercontent.com/LOLEduard/Eduard-s-Hub-Personal-Scripts/main/MergeSimulator.lua',
+    [210851291] = 'https://raw.githubusercontent.com/LOLEduard/Eduard-s-Hub-Personal-Scripts/main/BuildABoatForTreasure.lua',
+    [1008451066] = 'https://raw.githubusercontent.com/LOLEduard/Eduard-s-Hub-Personal-Scripts/main/DaHood.lua',
+    [2327642508] = 'https://raw.githubusercontent.com/LOLEduard/Eduard-s-Hub-Personal-Scripts/main/LaundrySimulator.lua',
+    [5686465822] = 'https://raw.githubusercontent.com/LOLEduard/Eduard-s-Hub-Personal-Scripts/main/PetCatchers.lua',
+    [703124385] = 'https://raw.githubusercontent.com/LOLEduard/Eduard-s-Hub-Personal-Scripts/main/TowerOfHell.lua',
+}
+
+for i, v in next, Games do
+    if i == game.GameId then
+        loadstring(game:HttpGet(v))()
+    end
 end
